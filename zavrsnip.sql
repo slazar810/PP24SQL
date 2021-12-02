@@ -72,12 +72,12 @@ insert into korisnik(sifra, ime, prezime, oib, email)values
 
 select * from narudzba;
 
-insert into narudzba(sifra, produkt,korisnik, datum_narduzbe)values
-(null, 1, 1,'2021-11-20'),
-(null, 2, 2,'2021-11-21');
+insert into narudzba(sifra, korisnik, datum_narduzbe)values
+(null, 1,'2021-11-20'),
+(null, 2,'2021-11-21');
 
 select * from kosarica;
 
-insert into kosarica(narudzba, produkt, količina_cijena)values
+insert into kosarica(narudzba, produkt, ukupna_cijena)values
 (1,1,299.99),
 (2,2,109.99);
