@@ -26,7 +26,6 @@ create table korisnik(
 
 create table narudzba(
     sifra int not null primary key auto_increment,
-    produkt int not null,
     korisnik int not null,
     datum_narduzbe datetime
 );
@@ -34,7 +33,8 @@ create table narudzba(
 create table kosarica(
     narudzba int not null,
     produkt int not null,
-    količina_cijena decimal(18,2) not null
+    ukupna_cijena decimal(18,2) not null,
+    kolicina int
 );
 
 
